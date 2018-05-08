@@ -149,15 +149,14 @@
       "name": "vm_1_dns_servers",
       "label": "DNS Servers - vm_1",
       "description": "DNS servers for the virtual network adapter",
-      "type": "string",
-      "default": "10.77.1.1",
+      "type": "list",
+      "default": ["10.77.1.1"],
       "validation": "",
       "required": true,
       "secured": false,
       "hidden": false,
       "immutable": false,
-      "immutable_after_create": false,
-      "group_name": "virtualmachine"
+      "immutable_after_create": false
     },
     {
       "name": "vm_1_network_interface_label",
