@@ -122,7 +122,29 @@
       "hidden": false,
       "immutable": false,
       "immutable_after_create": false,
-      "group_name": "virtualmachine"
+      "group_name": "virtualmachine",
+      "options": [
+        {
+          "value": "1024",
+          "label": "1GB"
+        },
+        {
+          "value": "2048",
+          "label": "2GB"
+        },
+        {
+          "value": "4096",
+          "label": "4GB"
+        },
+        {
+          "value": "8192",
+          "label": "8GB"
+        },
+        {
+          "value": "16384",
+          "label": "16GB"
+        }
+      ]
     },
     {
       "name": "vm_1_cluster",
