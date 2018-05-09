@@ -85,7 +85,30 @@
       "hidden": false,
       "immutable": false,
       "immutable_after_create": false,
-      "group_name": "virtualmachine"
+      "group_name": "virtualmachine",
+      "options": [
+        {
+          "value": "1",
+          "label": "1 vCPU",
+          "default": "true"
+        },
+        {
+          "value": "2",
+          "label": "2 vCPU"
+        },
+        {
+          "value": "3",
+          "label": "3 vCPU"
+        },
+        {
+          "value": "4",
+          "label": "4 vCPU"
+        },
+        {
+          "value": "8",
+          "label": "8 vCPU"
+        }
+      ]
     },
     {
       "name": "vm_1_memory",
