@@ -288,7 +288,7 @@
       "label": "Template Disk Controller - vm_1",
       "description": "Type of template disk controller",
       "type": "string",
-      "default": "scsi",
+      "default": "scsi-isi-sas",
       "validation": "",
       "required": true,
       "secured": false,
