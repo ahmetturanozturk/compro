@@ -4,68 +4,38 @@
 ##
 #####################################################################
 
-variable "user" {
+variable "ibm_bmx_api_key" {
   type = "string"
   description = "Generated"
 }
 
-variable "password" {
+variable "ibm_sl_username" {
   type = "string"
   description = "Generated"
 }
 
-variable "vsphere_server" {
+variable "ibm_sl_api_key" {
   type = "string"
   description = "Generated"
 }
 
-variable "allow_unverified_ssl" {
+variable "vm_instance_domain" {
+  type = "string"
+  description = "The domain for the computing instance."
+}
+
+variable "vm_instance_hostname" {
+  type = "string"
+  description = "The hostname for the computing instance."
+}
+
+variable "vm_instance_datacenter" {
+  type = "string"
+  description = "The datacenter in which you want to provision the instance. NOTE: If dedicated_host_name or dedicated_host_id is provided then the datacenter should be same as the dedicated host datacenter."
+}
+
+variable "vm_instance_os_reference_code" {
   type = "string"
   description = "Generated"
-}
-
-variable "virtual_machine_name" {
-  type = "string"
-  description = "Virtual machine name for virtual_machine"
-}
-
-variable "virtual_machine_number_of_vcpu" {
-  type = "string"
-  description = "Number of virtual cpu's."
-}
-
-variable "virtual_machine_memory" {
-  type = "string"
-  description = "Memory allocation."
-}
-
-variable "virtual_machine_disk_name" {
-  type = "string"
-  description = "The name of the disk. Forces a new disk if changed. This should only be a longer path if attaching an external disk."
-}
-
-variable "virtual_machine_disk_size" {
-  type = "string"
-  description = "The size of the disk, in GiB."
-}
-
-variable "virtual_machine_template_name" {
-  type = "string"
-  description = "Generated"
-}
-
-variable "virtual_machine_datacenter_name" {
-  type = "string"
-  description = "Generated"
-}
-
-variable "virtual_machine_datastore_name" {
-  type = "string"
-  description = "Generated"
-}
-
-variable "virtual_machine_resource_pool" {
-  type = "string"
-  description = "Resource pool."
 }
 
