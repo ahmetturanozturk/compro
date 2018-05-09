@@ -20,12 +20,16 @@
     }
   },
   "metadata": {
-      "displayName": "<font color=\"000099\">Compro VMWare - Single Virtual Machine</font>",
+      "displayName": "Compro VMWare - Single Virtual Machine",
       "longDescription": "Create Virtual Machine with single vnic on a network label by cloning",
       "bullets": [
        {
          "title": "Clouds",
          "description": "VMware"
+       }
+       {
+        "title": "Author",
+        "description": "<strong>Turan Öztürk</strong>"
        },
        {
          "title": "Topology",
