@@ -1,5 +1,5 @@
 {
-  "name": "SingleVirtualMachine",
+  "name": "Compro VMWare - Single Virtual Machine",
   "description": "Create Virtual Machine with single vnic",
   "type": "prebuilt",
   "version": "1.0",
