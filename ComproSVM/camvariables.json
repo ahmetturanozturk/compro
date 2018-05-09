@@ -39,7 +39,6 @@
       "label": "vSphere Folder Name - vm_1",
       "description": "Target vSphere folder for virtual machine",
       "type": "string",
-      "default": "",
       "validation": "",
       "required": false,
       "secured": false,
