@@ -417,6 +417,16 @@
       "hidden": false,
       "immutable": false,
       "immutable_after_create": false,
+      "options": [
+      {
+        "value": "template-ubuntu",
+        "label": "Ubuntu Desktop 16.04.3"
+      },
+      {
+        "value": "template-windowserver2012",
+        "label": "Windows Server 2012"
+      }
+      ],
       "group_name": "virtualmachine"
     }
   ],
