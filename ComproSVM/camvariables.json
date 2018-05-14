@@ -178,7 +178,7 @@
       "label": "DNS Suffixes - vm_1",
       "description": "Name resolution suffixes for the virtual network adapter",
       "type": "list",
-      "default": ["cbt.net","test"],
+      "default": ["cbt.net"],
       "validation": "",
       "required": true,
       "secured": false,
