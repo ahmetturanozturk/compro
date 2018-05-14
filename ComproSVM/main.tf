@@ -176,10 +176,6 @@ resource "vsphere_virtual_machine" "vm_1" {
         domain    = "${var.vm_1_domain}"
         host_name = "${var.vm_1_name}"
       }
-      
-      windows_options {
-        computer_name = "${var.vm_1_name}"
-      }
 
       network_interface {
         ipv4_address = "${var.vm_1_ipv4_address}"
@@ -204,3 +200,6 @@ resource "vsphere_virtual_machine" "vm_1" {
     datastore_id   = "${data.vsphere_datastore.vm_1_datastore.id}"
   }
 }
+
+
+
