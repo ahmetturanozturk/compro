@@ -423,8 +423,8 @@
         "label": "Ubuntu Desktop 16.04.3"
       },
       {
-        "value": "template-windowserver2012",
-        "label": "Windows Server 2012"
+        "value": "template-redhat-7-3",
+        "label": "RedHat 7.3"
       }
       ],
       "group_name": "virtualmachine"
