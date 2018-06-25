@@ -3,7 +3,28 @@
   "input_datatypes": [ ],
   "input_namespaces": [ ],
   "output_namespace": "",
-  "input_groups": [ ],
+  "input_groups": [
+    {
+      "name": "Networking",
+      "label": "Networking"
+    },
+    {
+      "name": "Instances",
+      "label": "Instances"
+    },
+    {
+      "name": "Instances-vsphere_virtual_machine.vm_1",
+      "label": "Instances - vsphere_virtual_machine.vm_1"
+    },
+    {
+      "name": "Other",
+      "label": "Other"
+    },
+    {
+      "name": "Unused",
+      "label": "Unused"
+    }
+  ],
   "output_groups": [ ],
   "template_input_params": [
     {
@@ -13,12 +34,12 @@
       "type": "string",
       "default": true,
       "validation": "",
+      "group_name": "Other",
       "required": true,
       "secured": false,
       "hidden": true,
       "immutable": false,
-      "immutable_after_create": false,
-      "group_name": "cloud"
+      "immutable_after_create": false
     },
     {
       "name": "vm_1_name",
@@ -27,38 +48,40 @@
       "type": "string",
       "default": "vm-1",
       "validation": "",
+      "group_name": "Instances-vsphere_virtual_machine.vm_1",
       "required": true,
       "secured": false,
       "hidden": false,
       "immutable": false,
-      "immutable_after_create": false,
-      "group_name": "virtualmachine"
+      "immutable_after_create": false
     },
     {
       "name": "vm_1_folder",
       "label": "vSphere Folder Name - vm_1",
       "description": "Target vSphere folder for virtual machine",
       "type": "string",
+      "default": "",
       "validation": "",
+      "group_name": "Instances-vsphere_virtual_machine.vm_1",
       "required": false,
       "secured": false,
       "hidden": false,
       "immutable": false,
-      "immutable_after_create": false,
-      "group_name": "cloud"
+      "immutable_after_create": false
     },
     {
       "name": "vm_1_datacenter",
       "label": "vSphere Datacenter - vm_1",
       "description": "Target vSphere datacenter for virtual machine creation",
       "type": "string",
+      "default": "",
       "validation": "",
+      "group_name": "Other",
       "required": false,
       "secured": false,
       "hidden": false,
       "immutable": false,
-      "immutable_after_create": false,
-      "group_name": "cloud"
+      "immutable_after_create": false
     },
     {
       "name": "vm_1_domain",
@@ -67,6 +90,7 @@
       "type": "string",
       "default": "cbt.net",
       "validation": "",
+      "group_name": "Instances-vsphere_virtual_machine.vm_1",
       "required": true,
       "secured": false,
       "hidden": false,
@@ -80,16 +104,16 @@
       "type": "string",
       "default": "1",
       "validation": "",
+      "group_name": "Instances-vsphere_virtual_machine.vm_1",
       "required": true,
       "secured": false,
       "hidden": false,
       "immutable": false,
       "immutable_after_create": false,
-      "group_name": "virtualmachine",
       "options": [
         {
           "value": "1",
-          "label": "1 vCPU",
+          "label": "1 vCPU - Default",
           "default": "true"
         },
         {
@@ -117,12 +141,12 @@
       "type": "string",
       "default": "1024",
       "validation": "",
+      "group_name": "Instances-vsphere_virtual_machine.vm_1",
       "required": true,
       "secured": false,
       "hidden": false,
       "immutable": false,
       "immutable_after_create": false,
-      "group_name": "virtualmachine",
       "options": [
         {
           "value": "1024",
@@ -151,13 +175,14 @@
       "label": "vSphere Cluster - vm_1",
       "description": "Target vSphere cluster to host the virtual machine",
       "type": "string",
+      "default": "",
       "validation": "",
+      "group_name": "Unused",
       "required": false,
       "secured": false,
       "hidden": false,
       "immutable": false,
-      "immutable_after_create": false,
-      "group_name": "cloud"
+      "immutable_after_create": false
     },
     {
       "name": "vm_1_resource_pool",
@@ -166,34 +191,35 @@
       "type": "string",
       "default": "test",
       "validation": "",
+      "group_name": "Other",
       "required": true,
       "secured": false,
       "hidden": false,
       "immutable": false,
-      "immutable_after_create": false,
-      "group_name": "virtualmachine"
+      "immutable_after_create": false
     },
     {
       "name": "vm_1_dns_suffixes",
       "label": "DNS Suffixes - vm_1",
       "description": "Name resolution suffixes for the virtual network adapter",
       "type": "list",
-      "default": ["cbt.net"],
+      "default": [  "cbt.net" ],
       "validation": "",
+      "group_name": "Instances-vsphere_virtual_machine.vm_1",
       "required": true,
       "secured": false,
       "hidden": false,
       "immutable": false,
-      "immutable_after_create": false,
-      "group_name": "virtualmachine"
+      "immutable_after_create": false
     },
     {
       "name": "vm_1_dns_servers",
       "label": "DNS Servers - vm_1",
       "description": "DNS servers for the virtual network adapter",
       "type": "list",
-      "default": ["10.77.1.1"],
+      "default": [  "10.77.1.1" ],
       "validation": "",
+      "group_name": "Instances-vsphere_virtual_machine.vm_1",
       "required": true,
       "secured": false,
       "hidden": false,
@@ -207,12 +233,12 @@
       "type": "string",
       "default": "10.77.3.x",
       "validation": "",
+      "group_name": "Networking",
       "required": true,
       "secured": false,
       "hidden": false,
       "immutable": false,
-      "immutable_after_create": false,
-      "group_name": "virtualmachine"
+      "immutable_after_create": false
     },
     {
       "name": "vm_1_ipv4_gateway",
@@ -221,12 +247,12 @@
       "type": "string",
       "default": "10.77.3.254",
       "validation": "",
+      "group_name": "Instances-vsphere_virtual_machine.vm_1",
       "required": true,
       "secured": false,
       "hidden": false,
       "immutable": false,
-      "immutable_after_create": false,
-      "group_name": "virtualmachine"
+      "immutable_after_create": false
     },
     {
       "name": "vm_1_ipv4_address",
@@ -235,12 +261,12 @@
       "type": "string",
       "default": "10.77.3.240",
       "validation": "",
+      "group_name": "Instances-vsphere_virtual_machine.vm_1",
       "required": true,
       "secured": false,
       "hidden": false,
       "immutable": false,
-      "immutable_after_create": false,
-      "group_name": "virtualmachine"
+      "immutable_after_create": false
     },
     {
       "name": "vm_1_ipv4_prefix_length",
@@ -249,12 +275,12 @@
       "type": "string",
       "default": "24",
       "validation": "",
+      "group_name": "Instances-vsphere_virtual_machine.vm_1",
       "required": true,
       "secured": false,
       "hidden": false,
       "immutable": false,
-      "immutable_after_create": false,
-      "group_name": "virtualmachine"
+      "immutable_after_create": false
     },
     {
       "name": "vm_1_adapter_type",
@@ -263,6 +289,7 @@
       "type": "string",
       "default": "vmxnet3",
       "validation": "",
+      "group_name": "Instances-vsphere_virtual_machine.vm_1",
       "required": true,
       "secured": false,
       "hidden": false,
@@ -278,8 +305,7 @@
           "value": "e1000",
           "default": "e1000"
         }
-      ],
-      "group_name": "virtualmachine"
+      ]
     },
     {
       "name": "vm_1_root_disk_datastore",
@@ -288,12 +314,12 @@
       "type": "string",
       "default": "./new_VMDataStore_ISGelistirme_01",
       "validation": "",
+      "group_name": "Other",
       "required": true,
       "secured": false,
       "hidden": false,
       "immutable": false,
-      "immutable_after_create": false,
-      "group_name": "virtualmachine"
+      "immutable_after_create": false
     },
     {
       "name": "vm_1_root_disk_type",
@@ -302,6 +328,7 @@
       "type": "string",
       "default": "thin",
       "validation": "",
+      "group_name": "Unused",
       "required": true,
       "secured": false,
       "hidden": false,
@@ -322,8 +349,7 @@
           "label": "Thin Provision",
           "group_name": "virtualmachine"
         }
-      ],
-      "group_name": "virtualmachine"
+      ]
     },
     {
       "name": "vm_1_root_disk_controller_type",
@@ -332,6 +358,7 @@
       "type": "string",
       "default": "scsi-isi-sas",
       "validation": "",
+      "group_name": "Unused",
       "required": true,
       "secured": false,
       "hidden": false,
@@ -363,8 +390,7 @@
           "value": "ide",
           "label": "ide"
         }
-      ],
-      "group_name": "virtualmachine"
+      ]
     },
     {
       "name": "vm_1_root_disk_keep_on_remove",
@@ -373,6 +399,7 @@
       "type": "string",
       "default": "false",
       "validation": "",
+      "group_name": "Instances-vsphere_virtual_machine.vm_1",
       "required": true,
       "secured": false,
       "hidden": true,
@@ -388,8 +415,7 @@
           "value": "true",
           "label": "True"
         }
-      ],
-      "group_name": "virtualmachine"
+      ]
     },
     {
       "name": "vm_1_root_disk_size",
@@ -398,12 +424,12 @@
       "type": "string",
       "default": "100",
       "validation": "",
+      "group_name": "Instances-vsphere_virtual_machine.vm_1",
       "required": true,
       "secured": false,
       "hidden": false,
       "immutable": false,
-      "immutable_after_create": false,
-      "group_name": "virtualmachine"
+      "immutable_after_create": false
     },
     {
       "name": "vm_1-image",
@@ -412,12 +438,14 @@
       "type": "string",
       "default": "template1",
       "validation": "",
+      "group_name": "Instances",
       "required": true,
       "secured": false,
       "hidden": false,
       "immutable": false,
       "immutable_after_create": false,
       "options": [
+<<<<<<< Upstream, based on 5acf88cb438fd9b0ed344a241de5f7f9500ee7dc
       {
         "value": "template-ubuntu",
         "label": "Ubuntu Desktop 16.04.3"
@@ -428,6 +456,17 @@
       }
       ],
       "group_name": "virtualmachine"
+=======
+        {
+          "value": "template-ubuntu",
+          "label": "Ubuntu Desktop 16.04.3"
+        },
+        {
+          "value": "template-redhat-7-3",
+          "label": "RedHat 7.3"
+        }
+      ]
+>>>>>>> e1ab1c3 Default etiketi eklendi
     }
   ],
   "template_output_params": [ ]
